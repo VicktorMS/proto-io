@@ -12,6 +12,7 @@ import twitchLogo from "/icons/twitch-small.svg";
 import GearCardGroup from "./components/GearCardGroup";
 import RazerCard from "./components/RazerCard";
 import Drawer from "./components/Drawer";
+import SectionTitle from "./components/SectionTitle";
 
 const App = () => {
   return (
@@ -49,9 +50,13 @@ const App = () => {
             <StatsGroup />
           </section>
           <section className="flex flex-col gap-4">
-            <h2 className="text-xl font-bold px-4">MEU GEAR</h2>
+            <SectionTitle>MEU GEAR</SectionTitle>
             <GearCardGroup />
             <RazerCard />
+          </section>
+          <section>
+            <SectionTitle>NOSSA LOJA</SectionTitle>
+            
           </section>
         </main>
       </Drawer>
