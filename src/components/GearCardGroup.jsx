@@ -1,16 +1,16 @@
 import React from "react";
 import Card from "./Card";
 
-import mouseImage from "/images/mouse-razer-130-x-140.png"
-import keyboardImage from "/images/keyboard-razer-130-x-140.png"
-import headsetImage from "/images/headset-razer-130-x-140.png"
+import mouseImage from "/images/gear/mouse-razer-130-x-140.png"
+import keyboardImage from "/images/gear/keyboard-razer-130-x-140.png"
+import headsetImage from "/images/gear/headset-razer-130-x-140.png"
 
 const GearCardGroup = () => {
   return (
     <>
       <Card
         src={mouseImage}
-        alt="Jogador BRTT"
+        alt="Deathadder R-X1"
         bgColor="bg-primary"
         contentStyle="h-full p-6 flex flex-col gap-2 text-primary-content justify-center"
       >
@@ -23,7 +23,7 @@ const GearCardGroup = () => {
 
       <Card
         src={keyboardImage}
-        alt="Jogador BRTT"
+        alt="Blackwidow Chroma 2.0"
         bgColor="bg-secondary"
         contentStyle="h-full p-6 flex flex-col gap-2 justify-center text-secondary-content"
       >
@@ -36,7 +36,7 @@ const GearCardGroup = () => {
 
       <Card
         src={headsetImage}
-        alt="Jogador BRTT"
+        alt="Kraken X"
         bgColor="bg-secondary"
         contentStyle="h-full p-6 flex flex-col gap-2 justify-center text-secondary-content"
       >

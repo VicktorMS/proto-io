@@ -5,5 +5,5 @@
 @tailwind utilities;
 
 #root{
-  @apply font-body w-screen h-screen;
+  @apply font-body w-screen h-screen box-border;
 }

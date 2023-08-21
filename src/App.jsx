@@ -6,13 +6,17 @@ import StatsGroup from "./components/StatsGroup";
 
 import playerBrtt from "/images/brtt.png";
 import locationIcon from "/icons/location.svg";
+
 import twitterIcon from "/icons/twitter-logo.svg";
 import discordLogo from "/icons/discord-small.svg";
 import twitchLogo from "/icons/twitch-small.svg";
+
 import GearCardGroup from "./components/GearCardGroup";
 import RazerCard from "./components/RazerCard";
 import Drawer from "./components/Drawer";
 import SectionTitle from "./components/SectionTitle";
+import StoreCarousel from "./components/StoreCarousel";
+import PlayerCardGroup from "./components/PlayerCardGroup";
 
 const App = () => {
   return (
@@ -54,9 +58,15 @@ const App = () => {
             <GearCardGroup />
             <RazerCard />
           </section>
-          <section>
+          <section className="flex flex-col gap-4 ">
             <SectionTitle>NOSSA LOJA</SectionTitle>
-            
+            <div className="px-4 max-w-[414px]">
+              <StoreCarousel />
+            </div>
+          </section>
+          <section className="flex flex-col gap-4 ">
+            <SectionTitle>NOSSO TIME</SectionTitle>
+            <PlayerCardGroup/>
           </section>
         </main>
       </Drawer>

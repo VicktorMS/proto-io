@@ -1,7 +1,7 @@
 import React from "react";
 
-import razerLogo from "/images/razer-logo.png";
-import painLogo from "/images/pain-logo.png";
+import razerLogo from "/images/gear/razer-logo.png";
+import painLogo from "/images/gear/pain-logo.png";
 
 const RazerCard = () => {
   return (
