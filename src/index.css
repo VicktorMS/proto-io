@@ -7,3 +7,6 @@
 #root{
   @apply font-body w-screen h-screen box-border;
 }
+/* html{
+  @apply box-border
+} */
