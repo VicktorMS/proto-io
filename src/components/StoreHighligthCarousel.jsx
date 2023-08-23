@@ -12,7 +12,7 @@ const StoreHighlightCarousel = () => {
   
   return (
     <>
-      <div className="carousel w-[414px]">
+      <div className="carousel max-w-sm md:max-w-full">
         {products.map((src, index) => 
           <CarouselItem key={index} productsArr={products} id={index + 1} src={src}/>
         )}
@@ -42,7 +42,7 @@ const CarouselItem = ({id, src, productsArr }) => {
     <div id={`highlight-store-chair-${id}`} className="carousel-item relative w-full h-1/2">
      
       <div className="w-full  px-4">
-         <div className="w-full h-full bg-[#111] rounded-lg flex flex-col max-w-[414px] items-center relative justify-center">
+         <div className="w-full h-full bg-[#111] rounded-lg flex flex-col md:max-w-full max-w-sm items-center relative justify-center">
             <img src={src} alt={"Razer Iskur - Black / Green - XL Versão " + id} className="max-h-full"/>
             <div className="-translate-y-5 text-center">
               <h4 className="font-bold"><span className="text-primary">Razer</span> Iskur - Black /<span className="text-primary">Green</span>  - XL</h4>

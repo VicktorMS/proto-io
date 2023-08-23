@@ -14,7 +14,7 @@ import mouse2Image from "/images/store/mouse-2.png";
 const HighlightCardGroup = () => {
   return (
     <>
-      <Card bgColor="bg-primary text-black" className="relative">
+      <Card bgColor="bg-primary text-black" className="relative bg-pain-logo bg-left">
         <h2 className="font-black text-2xl">NOVA GERAÇÃO</h2>
         <p className="font-medium">
           <span className="font-extrabold">Razer</span> Deathadder
@@ -22,15 +22,10 @@ const HighlightCardGroup = () => {
         <button className="btn btn-black text-primary font-bold w-fit px-6 py-2 btn-sm text-xs">
           Ver Mais
         </button>
-        <img
-          src={painLogo}
-          alt="Logo da Pain Game"
-          className="absolute object-cover top-0 z-10 right-0"
-        />
       </Card>
 
-      <Card bgColor="bg-primary text-black" className="relative">
-        <div className="flex justify-center  gap-3">
+      <Card bgColor="bg-primary text-black" className="bg-pain-logo bg-right">
+        <div className="flex justify-center  gap-3 ">
           <img
             src={mouse1Image}
             alt="Deathadder R-X1"
@@ -75,15 +70,10 @@ const HighlightCardGroup = () => {
           </div>
         </div>
 
-        <img
-          src={painLogo}
-          alt="Logo da Pain Game"
-          className="absolute object-cover top-0 z-10 -translate-x-32 right-0"
-        />
       </Card>
 
-      <Card bgColor="bg-[#111] " className="relative">
-        <div className="flex justify-center  gap-4">
+      <Card bgColor="bg-[#111] " className="relative bg-pain-logo bg-right ">
+        <div className="flex justify-center  gap-4 ">
           <img
             src={mouse2Image}
             alt="Deathadder R-X1"
@@ -128,11 +118,6 @@ const HighlightCardGroup = () => {
           </div>
         </div>
 
-        <img
-          src={painLogo}
-          alt="Logo da Pain Game"
-          className="absolute object-cover top-0 z-10 -translate-x-32 right-0"
-        />
       </Card>
     </>
   );

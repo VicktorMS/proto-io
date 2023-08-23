@@ -17,7 +17,7 @@ const HighlightProductsCardGroup = () => {
 const HighlightProductCard = ({ name, accent, image }) => {
   return (
     <div className="text-center rounded-lg h-20 flex justify-center items-center w-full relative">
-      <p className="font-bold text-sm z-20 hidden">
+      <p className="font-bold text-sm z-20 bg-[#111] w-full md:hidden">
         {name} <span className="text-primary">{accent}</span>
       </p>
       <img src={image} alt={`${name}`} className="absolute object-cover z-10 h-full rounded-lg"/>

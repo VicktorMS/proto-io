@@ -8,6 +8,9 @@ export default {
     extend: {
       fontFamily: {
         body: ['Red Hat Display']
+      },
+      backgroundImage: {
+        'pain-logo': "url(/images/backgrounds/pain-logo.png)"
       }
     },
   },
@@ -17,7 +20,7 @@ export default {
         proto: {
           // ...require("daisyui/src/theming/themes")["[data-theme=dark]"],
           "primary": "#8FFF00",
-          "primary-content": "#203800",
+          "primary-content": "#000",
           "secondary": "#363C57",
           "accent": "#454F76",
           "accent-content": "#8B95BF",

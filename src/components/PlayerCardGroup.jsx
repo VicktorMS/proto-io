@@ -5,7 +5,7 @@ import ThinCard from "./ThinCard";
 import wizerPlayer from "/images/team/wizer.png";
 import cariokPlayer from "/images/team/cariok.png";
 import dynquedoPlayer from "/images/team/dy-nquedo.png";
-import trigoPlayer from "/images/team/Trigo.png";
+import trigoPlayer from "/images/team/trigo.png";
 import damagePlayer from "/images/team/damage.png";
 
 //Icons Image
