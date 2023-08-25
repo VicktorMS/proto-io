@@ -12,8 +12,7 @@ const GearCardGroup = () => {
       <Card
         src={mouseImage}
         alt="Deathadder R-X1"
-        bgColor="bg-primary"
-        className="h-full p-6 flex flex-col gap-2 text-primary-content justify-center"
+        className="h-full p-6 gap-2 bg-primary text-primary-content"
       >
         <p className="font-extrabold text-sm">Mouse</p>
         <p>
