@@ -5,9 +5,10 @@ const Card = ({
   alt,
   children,
   className,
+  wrapperClass
 }) => {
   return (
-    <div className="w-full px-4">
+    <div className={`w-full ${wrapperClass}`}>
       <div className={`w-full h-full flex min-h-40 `}>
         {src && (
           <img

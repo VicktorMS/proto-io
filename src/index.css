@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 #root{
-  @apply font-body w-screen h-screen box-border;
+  @apply font-body w-screen h-screen box-border max-w-screen-xl
 }
-/* html{
-  @apply box-border
-} */
+body{
+  @apply flex justify-center;
+}

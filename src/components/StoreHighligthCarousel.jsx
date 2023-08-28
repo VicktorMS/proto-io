@@ -12,7 +12,7 @@ const StoreHighlightCarousel = () => {
   
   return (
     <>
-      <div className="carousel max-w-sm md:max-w-full">
+      <div className="carousel max-w-sm md:max-w-full lg:w-full">
         {products.map((src, index) => 
           <CarouselItem key={index} productsArr={products} id={index + 1} src={src}/>
         )}

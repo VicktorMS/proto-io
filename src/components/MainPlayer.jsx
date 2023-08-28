@@ -18,6 +18,7 @@ const MainPlayer = () => {
     <>
       <Card
         src={playerBrtt}
+        wrapperClass="px-4"
         alt="Jogador BRTT"
         className="p-6 bg-secondary gap-3"
       >

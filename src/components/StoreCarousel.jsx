@@ -9,7 +9,7 @@ import kitImage from "/images/store/kit-pain-000-x-205.png";
 const StoreCarousel = () => {
     return (
     <>
-      <div className="carousel w-full max-w-sm md:max-w-full h-96 gap-2 ">
+      <div className="carousel w-full max-w-sm md:max-w-full xl:w-full h-96 gap-2 xl:mb-4 ">
         <CarouselItem
           itemOrder={"item1"}
           src={uniformeImage}
@@ -48,7 +48,7 @@ const CarouselItem = ({ itemOrder, title, src, alt, price, description }) => {
   return (
     <div
       id={itemOrder}
-      className="carousel-item w-full h-full flex flex-col overflow-y-hidden rounded-lg max-w-sm"
+      className="carousel-item w-full h-full flex flex-col overflow-y-hidden rounded-lg max-w-sm xl:max-w-lg"
     >
       <img src={src} alt={alt} className="h-[45%] object-cover" />
       <div className="bg-secondary h-[55%] p-4 flex flex-col justify-between">

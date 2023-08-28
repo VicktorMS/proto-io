@@ -10,9 +10,10 @@ const GearCardGroup = () => {
   return (
     <>
       <Card
+        wrapperClass="px-0"
         src={mouseImage}
         alt="Deathadder R-X1"
-        className="h-full p-6 gap-2 bg-primary text-primary-content"
+        className="p-6 bg-primary text-primary-content gap-3"
       >
         <p className="font-extrabold text-sm">Mouse</p>
         <p>
@@ -24,10 +25,11 @@ const GearCardGroup = () => {
       </Card>
 
       <Card
+        wrapperClass="px-0"
         src={keyboardImage}
         alt="Blackwidow Chroma 2.0"
         bgColor="bg-secondary"
-        className="h-full p-6 flex flex-col gap-2 justify-center text-secondary-content"
+        className="p-6 bg-secondary text-secondary-content gap-3"
       >
         <p className="font-extrabold text-sm">Keyboard</p>
         <p className="text-base-content">
@@ -40,10 +42,11 @@ const GearCardGroup = () => {
       </Card>
 
       <Card
+        wrapperClass="px-0"
         src={headsetImage}
         alt="Kraken X"
         bgColor="bg-secondary"
-        className="h-full p-6 flex flex-col gap-2 justify-center text-secondary-content"
+        className="p-6 bg-secondary text-secondary-content gap-3"
       >
         <p className="font-extrabold text-sm">Headset</p>
         <p className="text-base-content">
@@ -53,6 +56,53 @@ const GearCardGroup = () => {
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
+
+      <Card
+        wrapperClass="hidden lg:block"
+        src={headsetImage}
+        alt="Kraken X"
+        bgColor="bg-secondary"
+        className="p-6 bg-secondary text-secondary-content gap-3"
+      >
+        <p className="font-extrabold text-sm">Headset</p>
+        <p className="text-base-content">
+          <span className="font-extrabold text-primary">Razer</span> Kraken X
+        </p>
+        <div className="flex font-extrabold text-sm items-center">
+          <p>View More</p> <ArrowRight className="w-4 font-bold"/>
+        </div>
+      </Card>
+      <Card
+        wrapperClass="hidden xl:block"
+        src={headsetImage}
+        alt="Kraken X"
+        bgColor="bg-secondary"
+        className="p-6 bg-secondary text-secondary-content gap-3"
+      >
+        <p className="font-extrabold text-sm">Headset</p>
+        <p className="text-base-content">
+          <span className="font-extrabold text-primary">Razer</span> Kraken X
+        </p>
+        <div className="flex font-extrabold text-sm items-center">
+          <p>View More</p> <ArrowRight className="w-4 font-bold"/>
+        </div>
+      </Card>
+      <Card
+        wrapperClass="hidden xl:block"
+        src={headsetImage}
+        alt="Kraken X"
+        bgColor="bg-secondary"
+        className="p-6 bg-secondary text-secondary-content gap-3"
+      >
+        <p className="font-extrabold text-sm">Headset</p>
+        <p className="text-base-content">
+          <span className="font-extrabold text-primary">Razer</span> Kraken X
+        </p>
+        <div className="flex font-extrabold text-sm items-center">
+          <p>View More</p> <ArrowRight className="w-4 font-bold"/>
+        </div>
+      </Card>
+
     </>
   );
 };
