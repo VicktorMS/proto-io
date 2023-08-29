@@ -20,6 +20,9 @@ import painLogo from "/images/news/pain-logo-news.png"
 
 
 const App = () => {
+
+
+  
   return (
     <>
       <Drawer>

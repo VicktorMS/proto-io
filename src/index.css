@@ -4,8 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  @apply scroll-smooth ;
+}
+
 #root{
-  @apply font-body w-screen h-screen box-border max-w-screen-xl 
+  @apply font-body w-screen min-h-screen box-border max-w-screen-xl ; 
 }
 body{
   @apply flex justify-center ;
