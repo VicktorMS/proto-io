@@ -16,7 +16,7 @@ const HighlightProductsCardGroup = ({wrapperClass}) => {
 
 const HighlightProductCard = ({ name, accent, image }) => {
   return (
-    <div className="text-center rounded-lg h-20 lg:h-16 flex justify-center items-center w-full relative bg-[#111] bg-pain-logo">
+    <div className="text-center rounded-lg h-20 lg:h-16 flex justify-center items-center w-full relative bg-[#111] bg-pain-logo hover:scale-105 transition">
       <p className="font-bold text-sm z-20 w-full">
         {name} <span className="text-primary">{accent}</span>
       </p>

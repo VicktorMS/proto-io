@@ -5,7 +5,8 @@ const Card = ({
   alt,
   children,
   className,
-  wrapperClass
+  wrapperClass,
+  imageClass
 }) => {
   return (
     <div className={`w-full ${wrapperClass}`}>
@@ -14,7 +15,7 @@ const Card = ({
           <img
             src={src}
             alt={alt}
-            className="w-1/3  shadow-md object-cover rounded-l-lg"
+            className={`w-1/3 ${imageClass} shadow-md object-cover rounded-l-lg`}
           />
         )}
         <div

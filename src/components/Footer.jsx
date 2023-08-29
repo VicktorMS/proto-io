@@ -16,28 +16,31 @@ const Footer = () => {
           <h4 className="font-bold mb-2">
             © Pain Gaming 2022 ® Todos os Direitos Reservados
           </h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit Consequuntur.</p>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            Consequuntur.
+          </p>
         </div>
       </div>
 
       <div className="flex flex-col justify-between h-full w-full col-span-1">
         <div className="h-fit w-full text-right font-bold">
-          <ul>
-            <li>About</li>
-            <li>Gear</li>
-            <li>Store</li>
-            <li>Team</li>
-            <li>Sponsors</li>
+          <ul className="leading-7">
+            <MenuOption>About</MenuOption>
+            <MenuOption>Gear</MenuOption>
+            <MenuOption>Store</MenuOption>
+            <MenuOption>Team</MenuOption>
+            <MenuOption>Sponsors</MenuOption>
           </ul>
         </div>
         <div className="text-right w-full h-full mt-2">
           {/* <span className="footer-title">Social</span> */}
-          <div className="flex flex-row-reverse gap-2 mt-1">
+          <div className="flex flex-row-reverse gap-2 mt-1 ">
             <a>
-              <img src={overwolfLogo} alt="Overwolf logo" />
+              <img src={overwolfLogo} alt="Overwolf logo" className="w-7" />
             </a>
             <a>
-              <img src={twitchLogo} alt="Twitch Loog" />
+              <img src={twitchLogo} alt="Twitch Logo" />
             </a>
             <a>
               <img src={discordLogo} alt="Discord Logo" />
@@ -46,6 +49,19 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+  );
+};
+
+const MenuOption = ({ children }) => {
+  return (
+    <li>
+      <a
+        className="font-bold text-base cursor-pointer hover:text-primary h-11"
+        href={"#" + children}
+      >
+        {children}
+      </a>
+    </li>
   );
 };
 

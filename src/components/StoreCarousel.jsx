@@ -14,18 +14,21 @@ const StoreCarousel = () => {
           itemOrder={"item1"}
           src={uniformeImage}
           title={"Uniforme Oficial paiN Gaming 2021"}
+          alt={"Uniforme Oficial paiN Gaming 2021"}
           price={"139,90"}
         />
         <CarouselItem
           itemOrder={"item2"}
           src={boneImage}
           title={"Boné paiN Gaming 2021"}
+          alt={"Boné paiN Gaming 2021"}
           price={"39,90"}
         />
         <CarouselItem
           itemOrder={"item3"}
           src={kitImage}
           title={"Kit Uniforme + Boné paiN Gaming 2022"}
+          alt={"Kit Uniforme + Boné paiN Gaming 2022"}
           price={"159,90"}
         />
       </div>
@@ -47,9 +50,10 @@ const StoreCarousel = () => {
 const CarouselItem = ({ itemOrder, title, src, alt, price, description }) => {
   return (
     <div
-      id={itemOrder}
-      className="carousel-item w-full h-full flex flex-col overflow-y-hidden rounded-lg max-w-sm xl:max-w-lg"
+    id={itemOrder}
+    className="carousel-item w-full h-full flex flex-col overflow-y-hidden rounded-lg max-w-sm xl:max-w-lg "
     >
+
       <img src={src} alt={alt} className="h-[45%] object-cover" />
       <div className="bg-secondary h-[55%] p-4 flex flex-col justify-between">
         <div className="flex flex-col gap-2">
@@ -59,7 +63,7 @@ const CarouselItem = ({ itemOrder, title, src, alt, price, description }) => {
           </p>
         </div>
         <div className="flex items-center justify-between">
-          <button className="btn btn-primary btn-sm">Comprar Agora</button>
+          <button className="btn btn-primary btn-sm hover:scale-105 normal-case">Comprar Agora</button>
           <p className="text-3xl text-secondary-content font-bold">
             <span className="text-sm">R$</span>
             {price}

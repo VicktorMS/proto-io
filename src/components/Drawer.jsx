@@ -23,7 +23,7 @@ const Drawer = ({ children }) => {
 const MenuOption = ({ children }) => {
   return (
     <li>
-      <a className="font-bold text-lg">{children}</a>
+      <a className="font-bold text-lg cursor-pointer " href={"#" + children}>{children}</a>
     </li>
   );
 };

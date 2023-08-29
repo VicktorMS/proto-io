@@ -19,7 +19,7 @@ const GearCardGroup = () => {
         <p>
           <span className="font-extrabold">Razer</span> Deathadder R-X1
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer ">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
@@ -36,7 +36,7 @@ const GearCardGroup = () => {
           <span className="font-extrabold text-primary">Razer</span> Blackwidow
           Chroma 2.0
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
@@ -52,7 +52,7 @@ const GearCardGroup = () => {
         <p className="text-base-content">
           <span className="font-extrabold text-primary">Razer</span> Kraken X
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
@@ -68,7 +68,7 @@ const GearCardGroup = () => {
         <p className="text-base-content">
           <span className="font-extrabold text-primary">Razer</span> Kraken X
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
@@ -83,7 +83,7 @@ const GearCardGroup = () => {
         <p className="text-base-content">
           <span className="font-extrabold text-primary">Razer</span> Kraken X
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>
@@ -98,7 +98,7 @@ const GearCardGroup = () => {
         <p className="text-base-content">
           <span className="font-extrabold text-primary">Razer</span> Kraken X
         </p>
-        <div className="flex font-extrabold text-sm items-center">
+        <div className="flex font-extrabold text-sm items-center cursor-pointer">
           <p>View More</p> <ArrowRight className="w-4 font-bold"/>
         </div>
       </Card>

@@ -15,7 +15,7 @@ const HighlightLargeCard = ({ label, productName, src }) => {
           <p className="font-medium lg:text-xl">
             <span className="font-extrabold">Razer</span> {productName}
           </p>
-          <button className="btn btn-black text-primary font-bold w-fit px-6 py-2 btn-sm lg:btn-md mt-4">
+          <button className="btn btn-black text-primary font-bold w-fit px-6 py-2 btn-sm lg:btn-md mt-4 hover:scale-105">
             Ver Mais
           </button>
         </div>
