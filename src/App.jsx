@@ -1,4 +1,5 @@
 import React from "react";
+import { Element } from "react-scroll";
 import Header from "./components/Header";
 import CommunityTab from "./components/CommunityTab";
 import GearCardGroup from "./components/GearCardGroup";
@@ -7,7 +8,6 @@ import Drawer from "./components/Drawer";
 import SectionTitle from "./components/SectionTitle";
 import StoreCarousel from "./components/StoreCarousel";
 import PlayerCardGroup from "./components/PlayerCardGroup";
-import HighlightProductsGroup from "./components/HighlightProductsCardGroup";
 import HighlightCardGroup from "./components/HighlightCardGroup";
 import StoreHighlightCarousel from "./components/StoreHighligthCarousel";
 import NewsCard from "./components/NewsCard";
@@ -26,10 +26,10 @@ const App = () => {
         <Header />
         <CommunityTab />
         <main>
-          <section className="lg:mb-8">
+          <section id="About" className="lg:mb-8">
             <MainPlayer />
           </section>
-          <section className="flex flex-col gap-4 lg:gap">
+          <section id="Gear" className="flex flex-col gap-4 lg:gap">
             <SectionTitle>MEU GEAR</SectionTitle>
             <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 px-4 gap-3">
               <GearCardGroup />
@@ -37,17 +37,17 @@ const App = () => {
             <RazerCard />
           </section>
 
-          <section className="flex flex-col gap-4">
+          <section id="Store" className="flex flex-col gap-4">
             <SectionTitle>NOSSA LOJA</SectionTitle>
             <div className="px-4 w-full flex flex-col items-center">
               <StoreCarousel />
             </div>
           </section>
-          <section className="flex flex-col gap-4 ">
+          <section id="Team" className="flex flex-col gap-4 ">
             <SectionTitle>NOSSO TIME</SectionTitle>
             <PlayerCardGroup />
           </section>
-          <section className="pt-4 flex flex-col gap-4 flex flex-col items-center">
+          <section id="Sponsors" className="pt-4 flex flex-col gap-4 flex flex-col items-center">
             <HighlightCardGroup />
             <StoreHighlightCarousel />
           </section>
@@ -70,7 +70,7 @@ const App = () => {
                     odio reprehenderit iure eligendi a nesciunt. Adipisci veniam
                     illo velit repellat. Ratione, consequuntur!
                   </p>
-                  <button className="btn btn-primary btn-xs  rounded-xl font-extrabold w-fit normal-case lg:btn-sm">
+                  <button className="btn btn-primary btn-xs  rounded-xl font-extrabold w-fit normal-case lg:btn-sm hover:scale-105">
                     Ver mais
                   </button>
                 </div>
@@ -86,7 +86,7 @@ const App = () => {
                     odio reprehenderit iure eligendi a nesciunt. Adipisci veniam
                     illo velit repellat. Ratione, consequuntur!
                   </p>
-                  <button className="btn btn-accent btn-xs rounded-xl font-extrabold w-fit normal-case lg:btn-sm">
+                  <button className="btn btn-accent btn-xs rounded-xl font-extrabold w-fit normal-case lg:btn-sm hover:scale-105">
                     Ver mais
                   </button>
                 </div>
@@ -111,7 +111,7 @@ const App = () => {
                       placeholder="Seu e-mail aqui"
                       className="bg-base-content text-primary-content input w-full max-w-xs rounded-e-none"
                     />
-                    <button className="btn btm-neutral rounded-s-none">
+                    <button className="btn btm-neutral rounded-s-none hover:scale-105">
                       Inscrever-se
                     </button>
                   </div>
